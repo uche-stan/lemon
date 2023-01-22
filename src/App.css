@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+
+
+/* General */
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "markazi text";
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Nav */
+
+#nav li {
+
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav li a{
+
+  text-decoration: none;
+  color: black
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#nav li  a:hover{
+
+  color: #495E57
+}
+
+
+/* Hero */
+
+#hero {
+  width: 100%;
+  height: 60vh;
+  background: #495E57;
+}
+
+#hero .container-fluid {
+  padding: 40px 0px 0 320px;
+  
+
+}
+
+#hero .row {
+
+  position: relative;
+}
+
+#hero h1{
+  color: #F4CE14;
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight:900;
+  line-height: 56px;
+}
+
+#hero h2{
   color: white;
+  margin-top: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+#hero p{
+  color: white;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#hero .txt-btn{
+  
+ position:absolute;
+ top: 150px;
 }
+
+#hero img{
+  
+  width: 300px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+#hero .btn-reserve-a-table{
+
+  background:  #F4CE14;
+  margin-top: 70px;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+
+
+
+@media (max-width: 992px) {
+  #hero .container-fluid {
+    padding: 10px 0px 0 0px;
+  }
+
+  #hero h1{
+    color: #F4CE14;
+    margin: 5px 0 0 10px;
+    font-size: 48px;
+    font-weight:400;
+    line-height: 56px;
+  }
+
+  #hero h2{
+    margin:0px 0 30px 10px;
+  }
+  #hero p{
+    margin: 5px 0 0 10px;
+
+  }
+  #hero .btn-reserve-a-table{
+
+    background:  #F4CE14;
+    margin: 90px 0 0 10px;
+  }
+  #hero img {
+    height: 200px;
+    width: 170px;
+    margin:  auto;
+    
+    
+  
+  }
+
+  #hero .txt-btn{
+  
+    position:static;
+   }
+ 
+ 
+
+}
+
+
